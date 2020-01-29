@@ -51,25 +51,34 @@ console.assert(isVowel("a") === true)
 console.assert(isVowel("E") === true)
 console.assert(isVowel("2") === false)
 
-// // ---------------------
-// // Write a function rovarspraket() that will translate
-// // a text into "Rovarspraket". That is, double every
-// // consonant and place an occurrence of "o" in between.
-// // For example, translate("this is fun") should return
-// // the string "tothohisos isos fofunon".
-// // ---------------------
+// ---------------------
+// Write a function rovarspraket() that will translate
+// a text into "Rovarspraket". That is, double every
+// consonant and place an occurrence of "o" in between.
+// For example, translate("this is fun") should return
+// the string "tothohisos isos fofunon".
+// ---------------------
+function rovarspraket(a, b, c, d, e) {
+  translate("b" && "c" && "d" && "e")
+}
+console.assert(rovarspraket("a") === "a")
+console.assert(rovarspraket("b") === "bob")
+console.assert(rovarspraket("cat") === "cocatot")
+console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
+console.assert(rovarspraket(0) === "0")
 
-// console.assert(rovarspraket("a") === "a")
-// console.assert(rovarspraket("b") === "bob")
-// console.assert(rovarspraket("cat") === "cocatot")
-// console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-// console.assert(rovarspraket(0) === "0")
-
-// // ---------------------
-// // Define a function reverse() that computes the reversal
-// // of a string. For example, reverse("jag testar") should
-// // return the string "ratset gaj".
-// // ---------------------
-
-// console.assert(reverse("books") === "skoob")
-// console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+// ---------------------
+// Define a function reverse() that computes the reversal
+// of a string. For example, reverse("jag testar") should
+// return the string "ratset gaj".
+// ---------------------
+function reverse(str) {
+  var splitString = str.split("")
+  var reverseArray = splitString.reverse()
+  var joinArray = reverseArray.join("")
+  return joinArray
+}
+console.assert(reverse("books") === "skoob")
+console.assert(
+  reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew"
+)
